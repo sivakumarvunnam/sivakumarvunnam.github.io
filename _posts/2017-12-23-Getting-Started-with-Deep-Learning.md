@@ -2,7 +2,7 @@
 
 layout:	post
 title: "A Complete Guide on Getting Started with Deep Learning"
-author: "Hardik Chauhan"
+author: "Sivakumar Vunnam"
 excerpt: "Resources for Deep Learning"
 keywords: Deep Learning, Machine Learning, beginning, unix, windows, switching, comparison
 

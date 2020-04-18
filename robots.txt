@@ -1,0 +1,3 @@
+User-agent: *
+Disallow: /resume.pdf
+Sitemap: https://sivakumarvunnam.devops.github.io/sitemap.xml

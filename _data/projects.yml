@@ -1,0 +1,25 @@
+- name: "CI-CD-Docker"
+ # github:
+ #   repo: "icmptunnel"
+ # url: "https://dhavalkapil.com/icmptunnel/"
+  source_url: "https://github.com/sivakumarvunnam/CI-CD-Docker"
+  description:
+    - CI-CD Process Setup Using Docker, Jenkins SonarQube
+
+- name: "Vagrant-Ubuntu-Bionic-Base"
+  github:
+    repo: "vagrant-ubuntu-bionic-base"
+  #url: "https://dhavalkapil.com/luaver/"
+  source_url: "https://github.com/sivakumarvunnam/vagrant-ubuntu-bionic-base"
+  description:
+    - Vagrant Ubuntu 18.04 LTS base
+      
+- name: "vagrant-swarm-cluster"
+  github:
+    repo: "vagrant-ubuntu-bionic-base"
+  source_url: "https://github.com/sivakumarvunnam/vagrant-swarm-cluster"
+  description:
+    - Vagrant boxes used to create a Docker Swarm cluster
+    - Project Run a Swarm cluster locally using Vagrant.
+    
+  

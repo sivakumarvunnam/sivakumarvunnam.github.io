@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "Minikube vs kind vs k3s"
+title: "Minikube vs kind vs k3s - What should I use?"
 author: "Sivakumar Vunnam"
-excerpt: "What should I use"
+excerpt: "In this post we’ll have a look at three of them, compare their pros and cons and identify use cases for each of them"
 keywords: Minikube, Kind, k3s, kubernetes, DevOps
 draft: false
 ---

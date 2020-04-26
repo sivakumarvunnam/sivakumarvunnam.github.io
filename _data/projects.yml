@@ -12,6 +12,13 @@
   description:
     - Demo Project to Setup Production Ready, React App using Docker, nginx
 
+- name: "Dockerizing-Angular-App"
+  github:
+    repo: "Dockerizing-Angular-App"
+  source_url: "https://github.com/sivakumarvunnam/Dockerizing-Angular-App"
+  description:
+    - Demo Project to Setup Production Ready, Angular App using Docker, nginx with fully automated testcases using protractor
+
 - name: "Vagrant-Ubuntu-Bionic-Base"
   github:
     repo: "vagrant-ubuntu-bionic-base"

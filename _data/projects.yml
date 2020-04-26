@@ -5,6 +5,13 @@
   description:
     - CI-CD Process Setup Using Docker, Jenkins SonarQube
 
+- name: "Dockerizing-React-App"
+  github:
+    repo: "Dockerizing-React-App"
+  source_url: "https://github.com/sivakumarvunnam/Dockerizing-React-App"
+  description:
+    - Demo Project to Setup Production Ready, React App using Docker, nginx
+
 - name: "Vagrant-Ubuntu-Bionic-Base"
   github:
     repo: "vagrant-ubuntu-bionic-base"

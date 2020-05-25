@@ -1,8 +1,8 @@
 ---
 layout: post
-title: "install kubernetes on ubuntu-18-04 and 16-04 using Kubeadm"
+title: "Install kubernetes on ubuntu-18-04 and 16-04 using Kubeadm"
 author: "Sivakumar Vunnam"
-excerpt: "In this post “To Install kubernetes on Ubuntu 18.04 and 16.04” we are going to create Kubernetes cluster along with kubeadm on Ubuntu 18.04 (The same steps can be used for the Ubuntu 16.04 as well)
+excerpt: "In this post To Install kubernetes on Ubuntu 18.04 and 16.04 we are going to create Kubernetes cluster along with kubeadm on Ubuntu 18.04
 draft: false
 ---
 kubeadm is command line tool to interact with kubernetes cluster. Kubeadm relies on fast deployment feature of Docker and running the system services of kubernetes master and etcd server as container.

@@ -16,12 +16,13 @@ We are going to use two nodes
 ## Prerequisites
 
 Reading time is about 20 minutes
-Vagrant 2.2.7 or latest – For installation instruction [Click here](https://www.vagrantup.com/downloads.html)
-VM VirtualBox – For installation instruction [Click here](https://www.virtualbox.org/wiki/Linux_Downloads)
+
+* Vagrant 2.2.7 or latest – For installation instruction [Click here](https://www.vagrantup.com/downloads.html)
+* VM VirtualBox – For installation instruction [Click here](https://www.virtualbox.org/wiki/Linux_Downloads)
 
 ## Step 1 – Start your vagrant box
 
-As a minimum requirement for kubernetes installation we need –
+As a minimum requirement for kubernetes installation we need
 
 * Master Node – 2 cpus, 2 GB Memory
 * Worker Node – 1 cpu, 1 GB Memory
@@ -57,6 +58,10 @@ Vagrant.configure("2") do |config|
 end
 
 ```
+## Step 2 – Update host files on both master and worker node
 
+master node – SSH into the master node
+
+```$ vagrant ssh master```
 
 ---

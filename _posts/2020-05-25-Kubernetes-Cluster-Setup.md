@@ -62,6 +62,62 @@ end
 
 master node – SSH into the master node
 
-```$ vagrant ssh master```
+```
+$ vagrant ssh master
+
+```
+
+Add host entry for master as well as worker node
+
+```
+vagrant@master:~$ sudo vi /etc/hosts
+
+100.0.0.1 master.kubernetes.com master
+100.0.0.2 worker.kubernetes.com worker
+
+```
+worker node – SSH into the worker node
+
+```
+$ vagrant ssh worker
+
+```
+Add host entry for master as well as worker node
+
+```
+vagrant@worker:~$ sudo vi /etc/hosts
+
+100.0.0.1 master.kubernetes.com master
+100.0.0.2 worker.kubernetes.com worker
+
+```
+
+Test the worker node by sending from master
+
+```
+[vagrant@master ~]$ ping worker
+PING worker.kubernetes.com (100.0.0.2) 56(84) bytes of data.
+64 bytes from wprker.kubernetes.com (100.0.0.2): icmp_seq=1 ttl=64 time=0.462 ms
+64 bytes from worker.kubernetes.com (100.0.0.2): icmp_seq=2 ttl=64 time=0.686 ms
+
+```
+Test the master node by sending from worker
+
+```
+[vagrant@worker ~]$ ping master
+PING master.kubernetes.com (100.0.0.1) 56(84) bytes of data.
+64 bytes from master.kubernetes.com (100.0.0.1): icmp_seq=1 ttl=64 time=0.238 ms
+64 bytes from master.kubernetes.com (100.0.0.1): icmp_seq=2 ttl=64 time=0.510 ms
+
+```
+
+
+
+
+
+
+
+
+
 
 ---

@@ -140,6 +140,78 @@ Check the docker service status
 
 ```
 
+## Step 4 – Disable the firewall and turnoff the “swapping”
+
+We need to disable firewall as well as swapping on master as well as worker node. Because to install kubernetes we need to disable the swapping on both the nodes
+
+```
+vagrant@worker:~$ sudo ufw disable
+Firewall stopped and disabled on system startup
+
+```
+```
+[vagrant@worker ~]$ sudo swapoff -a
+
+```
+## Step 5 – Install “apt-transport-https” package
+
+To download the kubernetes and its public we need to install “apt-transport-https” package on both master as well as worker node
+
+```
+vagrant@master:~$ sudo apt-get update && sudo apt-get install -y apt-transport-https
+
+```
+## Step 6 – Download the public keys
+
+We need to have the public keys for accessing packages on Google Cloud. So run the following command to get the public keys on both master as well as worker node
+
+```
+vagrant@worker:~$ curl -s https://packages.cloud.google.com/apt/doc/apt-key.gpg | sudo apt-key add -
+OK
+
+```
+## Step 7 – Add kubernetes repo
+
+As a next step we need to add the kubernetes repo to both master as well as worker node
+
+```
+vagrant@worker:~$ sudo bash -c 'echo "deb http://apt.kubernetes.io/ kubernetes-xenial main" > /etc/apt/sources.list.d/kubernetes.list'
+
+```
+## Step 8 – Install kubernetes
+
+Now after adding the kubernetes repo we need to install the kubernetes on both mater as well as worker node
+
+```
+vagrant@master:~$ sudo apt-get update && sudo apt-get install -y kubelet kubeadm kubectl
+
+```
+## Step 9 – Enable and Start kubelet
+
+Alright now we have installed the kubernetes, now we need to enable the kubelet support for both master as well worker node
+
+```
+[vagrant@master ~]$ sudo systemctl enable kubelet
+
+[vagrant@master ~]$ sudo systemctl start kubelet
+
+```
+## Step 10 – Initialize the kubernetes cluster
+
+Okay now we have reach to point where we have done all the prerequisite for initializing the kubernetes cluster.
+
+Let’s run the kubernetes initialization command on only on master
+
+```
+[vagrant@master ~]$ sudo kubeadm init --apiserver-advertise-address=100.0.0.1 --pod-network-cidr=10.244.0.0/16
+
+```
+Note down kubeadm join command which we are going to use from worker node to join the master node using token.
+
+```
+kubeadm join 100.0.0.1:6443 --token nj21cz.iwxl9vhgniksdckz \
+    --discovery-token-ca-cert-hash sha256:ebfcfcedc9474c5e8154b433a3376f48ce67a97913c1ce4f7b1635c0ba0cef3d
+```
 
 
 

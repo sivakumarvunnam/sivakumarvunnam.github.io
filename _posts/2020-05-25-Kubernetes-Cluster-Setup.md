@@ -27,6 +27,8 @@ As a minimum requirement for kubernetes installation we need –
 * Worker Node – 1 cpu, 1 GB Memory
 
 Use following Vagrantfile to spin up your vagrant box:
+
+```
 Vagrant.configure("2") do |config|
   config.vm.define "master" do |master|
     master.vm.box_download_insecure = true    
@@ -54,6 +56,7 @@ Vagrant.configure("2") do |config|
 
 end
 
+```
 
 
 ---

@@ -237,7 +237,8 @@ Get the CNI(container network interface) configuration from flannel
 Note – But since we are working on the VMs so we need to check our Ethernet interfaces first.
 Look out for the Ethernet i.e. eth1 which has a ip address 100.0.0.1(this is the ip address which we used in vagrant file)
 
-```[vagrant@master ~]$ ip a s
+```
+[vagrant@master ~]$ ip a s
 1: lo: <LOOPBACK,UP,LOWER_UP>
 2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
     link/ether 08:00:27:bb:14:75 brd ff:ff:ff:ff:ff:ff
@@ -246,14 +247,16 @@ Look out for the Ethernet i.e. eth1 which has a ip address 100.0.0.1(this is the
     link/ether 08:00:27:fb:48:77 brd ff:ff:ff:ff:ff:ff
     inet 100.0.0.1
 4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP>
+
+```
 Now we need to add the extra args for eth1 in kube-flannel.yml
 
 ```
-```
 [vagrant@master ~]$ vi kube-flannel.yml
-Searche for – “flanneld”
 
 ```
+Searche for – “flanneld”
+
 In the args section add : – –iface=eth1
 
 - --iface=eth1

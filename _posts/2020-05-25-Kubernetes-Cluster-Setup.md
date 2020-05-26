@@ -223,7 +223,6 @@ Use the following command to get the kube config file and put it under working d
 [vagrant@master ~]$ mkdir -p $HOME/.kube
 [vagrant@master ~]$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
 [vagrant@master ~]$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
-
 ```
 ## Step 12 – Apply CNI from kube-flannel.yml(only run on master)
 After the master of the cluster is ready to handle jobs and the services are running, for the purpose of making containers accessible to each other through networking, we need to set up the network for container communication.
@@ -232,7 +231,6 @@ Get the CNI(container network interface) configuration from flannel
 
 ```
 [vagrant@master ~]$ wget https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
-
 ```
 Note – But since we are working on the VMs so we need to check our Ethernet interfaces first.
 Look out for the Ethernet i.e. eth1 which has a ip address 100.0.0.1(this is the ip address which we used in vagrant file)
@@ -247,13 +245,11 @@ Look out for the Ethernet i.e. eth1 which has a ip address 100.0.0.1(this is the
     link/ether 08:00:27:fb:48:77 brd ff:ff:ff:ff:ff:ff
     inet 100.0.0.1
 4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP>
-
 ```
 Now we need to add the extra args for eth1 in kube-flannel.yml
 
 ```
 [vagrant@master ~]$ vi kube-flannel.yml
-
 ```
 Searche for – “flanneld”
 
@@ -278,7 +274,6 @@ daemonset.apps/kube-flannel-ds-arm64 created
 daemonset.apps/kube-flannel-ds-arm created
 daemonset.apps/kube-flannel-ds-ppc64le created
 daemonset.apps/kube-flannel-ds-s390x created
-
 ```
 ## Step 13 – Join worker nodes to master(only run on worker)
 
@@ -311,7 +306,6 @@ To check the status of the nodes use
 NAME     STATUS   ROLES    AGE   VERSION
 master   Ready    master   26m   v1.18.2
 worker   Ready    <none>   63s   v1.18.2
-
 ```
 Summary
 So this was our beginner tutorial which involves around – 14 Steps to Install kubernetes on Ubuntu 18.04 and 16.04.

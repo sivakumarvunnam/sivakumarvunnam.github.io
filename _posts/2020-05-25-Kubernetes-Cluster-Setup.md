@@ -110,10 +110,35 @@ PING master.kubernetes.com (100.0.0.1) 56(84) bytes of data.
 64 bytes from master.kubernetes.com (100.0.0.1): icmp_seq=2 ttl=64 time=0.510 ms
 
 ```
+## Step 3 – Install Docker on both master and worker node
 
+You need to install Docker on both the node. So run the following installation command on both the nodes
 
+```
+[vagrant@master ~]$ sudo apt-get update && apt install docker.io
 
+```
+Enable and start docker
 
+```
+vagrant@master:~$ sudo systemctl enable docker
+Created symlink /etc/systemd/system/multi-user.target.wants/docker.service → /lib/systemd/system/docker.service.
+
+[vagrant@master ~]$ sudo systemctl start  docker
+
+```
+Check the docker service status
+
+```
+
+[vagrant@master ~]$ sudo systemctl status docker
+
+● docker.service - Docker Application Container Engine
+   Loaded: loaded (/lib/systemd/system/docker.service; enabled; vendor preset: enabled)
+   Active: active (running) since Thu 2020-04-23 19:10:59 UTC; 4s ago
+     Docs: https://docs.docker.com
+
+```
 
 
 

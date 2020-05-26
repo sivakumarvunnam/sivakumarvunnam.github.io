@@ -213,6 +213,111 @@ kubeadm join 100.0.0.1:6443 --token nj21cz.iwxl9vhgniksdckz \
     --discovery-token-ca-cert-hash sha256:ebfcfcedc9474c5e8154b433a3376f48ce67a97913c1ce4f7b1635c0ba0cef3d
 ```
 
+## Step 11 – Move kube config file to current user (only run on master)
+
+To interact with the kubernetes cluster and to user kubectl command, we need to have the kube config file with us.
+
+Use the following command to get the kube config file and put it under working directory.
+
+```
+[vagrant@master ~]$ mkdir -p $HOME/.kube
+[vagrant@master ~]$ sudo cp -i /etc/kubernetes/admin.conf $HOME/.kube/config
+[vagrant@master ~]$ sudo chown $(id -u):$(id -g) $HOME/.kube/config
+
+```
+## Step 12 – Apply CNI from kube-flannel.yml(only run on master)
+After the master of the cluster is ready to handle jobs and the services are running, for the purpose of making containers accessible to each other through networking, we need to set up the network for container communication.
+
+Get the CNI(container network interface) configuration from flannel
+
+```
+[vagrant@master ~]$ wget https://raw.githubusercontent.com/coreos/flannel/master/Documentation/kube-flannel.yml
+
+```
+Note – But since we are working on the VMs so we need to check our Ethernet interfaces first.
+Look out for the Ethernet i.e. eth1 which has a ip address 100.0.0.1(this is the ip address which we used in vagrant file)
+
+```[vagrant@master ~]$ ip a s
+1: lo: <LOOPBACK,UP,LOWER_UP>
+2: eth0: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:bb:14:75 brd ff:ff:ff:ff:ff:ff
+    inet 10.0.2.15
+3: eth1: <BROADCAST,MULTICAST,UP,LOWER_UP> mtu 1500 qdisc fq_codel state UP group default qlen 1000
+    link/ether 08:00:27:fb:48:77 brd ff:ff:ff:ff:ff:ff
+    inet 100.0.0.1
+4: docker0: <NO-CARRIER,BROADCAST,MULTICAST,UP>
+Now we need to add the extra args for eth1 in kube-flannel.yml
+
+```
+```
+[vagrant@master ~]$ vi kube-flannel.yml
+Searche for – “flanneld”
+
+```
+In the args section add : – –iface=eth1
+
+- --iface=eth1
+        args:
+        - --ip-masq
+        - --kube-subnet-mgr
+        - --iface=eth1
+Apply the flannel configuration
+
+```
+vagrant@master:~$ kubectl apply -f kube-flannel.yml
+podsecuritypolicy.policy/psp.flannel.unprivileged created
+clusterrole.rbac.authorization.k8s.io/flannel created
+clusterrolebinding.rbac.authorization.k8s.io/flannel created
+serviceaccount/flannel created
+configmap/kube-flannel-cfg created
+daemonset.apps/kube-flannel-ds-amd64 created
+daemonset.apps/kube-flannel-ds-arm64 created
+daemonset.apps/kube-flannel-ds-arm created
+daemonset.apps/kube-flannel-ds-ppc64le created
+daemonset.apps/kube-flannel-ds-s390x created
+
+```
+## Step 13 – Join worker nodes to master(only run on worker)
+
+In the Step 10 we generated the token and kubeadm join command. Now we need to use that join command from our worker node
+
+```
+vagrant@worker:~$ sudo kubeadm join 100.0.0.1:6443 --token g2bsw7.5xr3bqc21eqyc6r7     --discovery-token-ca-cert-hash sha256:39b2b0608b9300b3342a8d0a0e9204c8fc74d45b008043a810f94e4f1fb8861f
+W0423 19:27:00.344480   18268 join.go:346] [preflight] WARNING: JoinControlPane.controlPlane settings will be ignored when control-plane flag is not set.
+[preflight] Running pre-flight checks
+	[WARNING IsDockerSystemdCheck]: detected "cgroupfs" as the Docker cgroup driver. The recommended driver is "systemd". Please follow the guide at https://kubernetes.io/docs/setup/cri/
+[preflight] Reading configuration from the cluster...
+[preflight] FYI: You can look at this config file with 'kubectl -n kube-system get cm kubeadm-config -oyaml'
+[kubelet-start] Downloading configuration for the kubelet from the "kubelet-config-1.18" ConfigMap in the kube-system namespace
+[kubelet-start] Writing kubelet configuration to file "/var/lib/kubelet/config.yaml"
+[kubelet-start] Writing kubelet environment file with flags to file "/var/lib/kubelet/kubeadm-flags.env"
+[kubelet-start] Starting the kubelet
+[kubelet-start] Waiting for the kubelet to perform the TLS Bootstrap...
+
+This node has joined the cluster:
+* Certificate signing request was sent to apiserver and a response was received.
+* The Kubelet was informed of the new secure connection details.
+
+Run 'kubectl get nodes' on the control-plane to see this node join the cluster.
+```
+## Step 14 – Check the nodes status(only run on master)
+To check the status of the nodes use
+
+```
+[vagrant@master ~]$ kubectl get nodes
+NAME     STATUS   ROLES    AGE   VERSION
+master   Ready    master   26m   v1.18.2
+worker   Ready    <none>   63s   v1.18.2
+
+```
+Summary
+So this was our beginner tutorial which involves around – 14 Steps to Install kubernetes on Ubuntu 18.04 and 16.04.
+
+With that we can conclude what we have achieved 
+
+Congratulations we have successfully installed kubernetes on Ubuntu 18.04
+After installing kubernetes we are successfully join the worker nodes with master.
+
 
 
 

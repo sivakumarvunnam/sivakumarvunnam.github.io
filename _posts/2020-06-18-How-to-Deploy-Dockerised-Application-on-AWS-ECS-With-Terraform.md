@@ -27,5 +27,48 @@ The technologies used in this guide are:
 * ``Terraform`` — an open-source infrastructure as code tool
 
 
+## Prerequisites
+
+* An AWS account
+* Node installed
+* Docker installed and some experience using it
+* Terraform installed
+
+## Step 1 – Start your vagrant box
+
+First, run the following commands to create and navigate to our application’s directory:
+
+```
+$ vagrant ssh master
+```
+```
+vagrant@sivakumarvunnam:~$ mkdir node-docker-ecs
+vagrant@sivakumarvunnam:~$ cd node-docker-ecs/
+```
+Next, create an ``npm`` project and Install ``Express``:
+
+```
+vagrant@sivakumarvunnam:~/node-docker-ecs$ npm init --y
+vagrant@sivakumarvunnam:~/node-docker-ecs$ npm install express
+```
+Create an index.js file with the following code:
+
+```
+const express = require('express')
+const app = express()
+const port = 3000
+
+app.get('/', (req, res) => res.send('Hello, This is SivakumarVunnam!'))
+
+app.listen(port, () => console.log(`Example app listening on port ${port}!`))
+```
+
+The app can then run with below command && You should see your app at ``http://localhost:3000/``:
+
+```
+vagrant@sivakumarvunnam:~/node-docker-ecs$ node index.js
+```
+
+
 
 ---

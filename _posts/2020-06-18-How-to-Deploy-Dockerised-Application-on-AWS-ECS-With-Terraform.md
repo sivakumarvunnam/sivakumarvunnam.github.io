@@ -68,7 +68,33 @@ The app can then run with below command && You should see your app at ``http://l
 ```
 vagrant@sivakumarvunnam:~/node-docker-ecs$ node index.js
 ```
+## Step 2. Dockerize the Node App
 
+Create a ``Dockerfile`` in your project directory and populate it with the following code:
+```
+# Use an official Node runtime as a parent image
+FROM node:12.7.0-alpine
+
+MAINTAINER sivakumarvunnam1@gmail.com
+
+# Set the working directory to /app
+WORKDIR '/app'
+
+# Copy package.json to the working directory
+COPY package.json .
+
+# Install any needed packages specified in package.json
+RUN yarn
+
+# Copying the rest of the code to the working directory
+COPY . .
+
+# Make port 3000 available to the world outside this container
+EXPOSE 3000
+
+# Run index.js when the container launches
+CMD ["node", "index.js"]
+```
 
 
 ---

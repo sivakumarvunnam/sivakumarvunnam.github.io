@@ -95,7 +95,7 @@ EXPOSE 3000
 # Run index.js when the container launches
 CMD ["node", "index.js"]
 ```
-## Step 3. Build ands Push the Node App to AWS ECR
+## Step 3. Build and Push the Node App to AWS ECR
 
 Now it is time build and we our container to a container registry service — in this case, we will use ``AWS ECR`` we will use terraform to create our repository. In your directory create a file called main.tf. Populate your file with the following commented code:
 

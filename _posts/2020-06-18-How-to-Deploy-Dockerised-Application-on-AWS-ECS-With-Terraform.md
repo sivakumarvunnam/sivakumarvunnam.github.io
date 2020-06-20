@@ -197,8 +197,51 @@ Notice how we specify the image by referencing the repository URL of our other t
 
 ![](/assets/images/TaskDef.png)
 
+## Step 6. Create the First Service
+
+Now we have a cluster and a task definition. It is time that we spun up a few containers in our cluster through the creation of a service that will use our newly created task definition as a blueprint:
+
+```
+resource "aws_ecs_service" "nodeapp_first_service" {
+  name            = "nodeapp-first-service"                             # Naming our first service
+  cluster         = "${aws_ecs_cluster.nodeapp_cluster.id}"             # Referencing our created Cluster
+  task_definition = "${aws_ecs_task_definition.nodeapp_first_task.arn}" # Referencing the task our service will spin up
+  launch_type     = "FARGATE"
+  desired_count   = 3 # Setting the number of containers we want deployed to 3
+  network_configuration {
+    subnets          = ["${aws_default_subnet.default_subnet_a.id}", "${aws_default_subnet.default_subnet_b.id}", "${aws_default_subnet.default_subnet_c.id}", "${aws_default_subnet.default_subnet_d.id}"]
+    assign_public_ip = true # Providing our containers with public IPs
+  }
+}
+```
+As we are using Fargate, our tasks need to specify that the network mode is awsvpc. As a result, we need to extend our service to include a network configuration. You may have not known it yet, but our cluster was automatically deployed into your account’s default VPC. However, for a service, this needs to be explicitly stated, even if we wish to continue using the default VPC and subnets. First, we need to create reference resources to the default VPC and subnets so that they can be referenced by our other resources:
+
+```
+# Providing a reference to our default VPC
+resource "aws_default_vpc" "default_vpc" {
+}
+
+# Providing a reference to our default subnets
+resource "aws_default_subnet" "default_subnet_a" {
+  availability_zone = "eus-west-2a"
+}
+
+resource "aws_default_subnet" "default_subnet_b" {
+  availability_zone = "us-west-2b"
+}
+
+resource "aws_default_subnet" "default_subnet_c" {
+  availability_zone = "us-west-2c"
+}
+resource "aws_default_subnet" "default_subnet_d" {
+  availability_zone = "us-west-2d"
+}
+```
+
+Once deployed, click on your cluster, and you should then see your service:
 
 
+![](/assets/images/TaskDef.png)
 
 
 

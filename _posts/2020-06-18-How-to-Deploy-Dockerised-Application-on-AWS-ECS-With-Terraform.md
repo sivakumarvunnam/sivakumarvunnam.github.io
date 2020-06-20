@@ -240,8 +240,11 @@ resource "aws_default_subnet" "default_subnet_d" {
 
 Once deployed, click on your cluster, and you should then see your service:
 
+![](/assets/images/ECS_Service.png)
 
-![](/assets/images/TaskDef.png)
+If you click on your service and the Tasks tab, you should also see that three tasks/containers have been spun up:
+
+![](/assets/images/ECS_Service_Tasks.png)
 
 
 

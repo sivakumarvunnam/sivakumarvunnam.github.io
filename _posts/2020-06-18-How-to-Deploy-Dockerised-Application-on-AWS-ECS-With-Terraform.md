@@ -117,13 +117,19 @@ terraform init
 terraform plan
 terraform apply
 ```
+![](assets/images/ECR_Repo.png)
+
 Now we can build and push our Node application image up to this repository. Click on the repository and click View push commands. A modal will appear with four commands you need to run locally in order to have your image pushed up to your repository:
+
+![](assets/images/ECR_Push.png)
 
 Once you have run these commands, you should see your pushed image in your repository:
 
+![](assets/images/ImagePushed_ECR.png)
 
 ## Step 4. Create the  ECS Cluster
 ECS has three parts: clusters, services, and tasks.
+
 Next, add this code to your terraform file and redeploy your infrastructure with terraform apply:
 
 ```
@@ -133,6 +139,7 @@ resource "aws_ecs_cluster" "nodeap_cluster" {
 ```
 You should then see your new cluster:
 
+![](assets/images/ECS_Cluster.png)
 
 ## Step 5. Create the First Task
 

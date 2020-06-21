@@ -364,7 +364,7 @@ You should also be able to access your containers through your load balancer URL
 
 ![](/assets/images/URL.png)
 
-Conclusion
+## Conclusion
 
 I hope you learned a lot. See the final code on ([GitHub](https://github.com/sivakumarvunnam/terraform-ecs-nodejs/main.tf)).
 ---

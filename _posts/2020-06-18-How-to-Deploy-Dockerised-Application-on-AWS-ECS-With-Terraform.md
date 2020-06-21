@@ -358,13 +358,13 @@ resource "aws_security_group" "service_security_group" {
   }
 }
 ```
-
-
 You should also be able to access your containers through your load balancer URL:
 
 ![](/assets/images/URL.png)
 
 ## Conclusion
 
-I hope you learned a lot. See the final code on ([GitHub](https://github.com/sivakumarvunnam/terraform-ecs-nodejs/main.tf)).
+See the final code on ([GitHub](https://github.com/sivakumarvunnam/terraform-ecs-nodejs/blob/master/main.tf)).
+
+
 ---

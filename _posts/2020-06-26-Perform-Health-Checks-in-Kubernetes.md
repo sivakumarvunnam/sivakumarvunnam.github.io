@@ -12,13 +12,17 @@ Kubernetes provides a health checking mechanism to verify if a container in a po
 
 
 Health Checks source Thanks to (https://wideops.com/)
+
 Kubernetes gives you three types of health checks performed by the kubelet. They are:
+
 * Startup Probe
 * Liveness Probe
 * Readiness Probe
 
-# Startup Probe
-Whenever we are dealing with physical/Legacy apps those may require extra startup time at first initialisation. In this cases we have a tendency to established a startup probe with constant command, protocol or TCP check, with a failureThreshold periodSeconds long enough to hide the more severe case startup time.
+## Startup Probe
+
+Whenever we are dealing with physical/Legacy apps those may require extra startup time at first initialisation. In this cases we have a tendency to established a startup probe with constant command, protocol or TCP check, with a failureThreshold periodSeconds long enough to hide the more severe case startup time:
+
 ```
 ports:
 - name: liveness-port
@@ -38,8 +42,9 @@ startupProbe:
     port: liveness-port
   failureThreshold: 30
   periodSeconds: 10
+
 ```
-# Liveness Probe
+## Liveness Probe
 
 Liveness probe checks the status of the container (whether it is running or not). If livenessProbe fails, then automatically container move on with its restart policy
 
@@ -47,7 +52,7 @@ Liveness probe checks the status of the container (whether it is running or not)
 
 Liveness Probe source Thanks to (https://wideops.com/)
 
-# Readiness Probe
+## Readiness Probe
 
 Readiness probe checks whether your application is ready to serve the requests. When the readiness probe fails, the pod’s IP is removed from the endpoint list of the service.
 

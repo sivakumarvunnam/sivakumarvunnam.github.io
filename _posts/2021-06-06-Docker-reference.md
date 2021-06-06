@@ -17,9 +17,7 @@ command: docker images
 List running images:
 ```docker ps -a
 ```
-
-### To get last images runned :
-
+To get last images runned:
 ```docker ps -l
 ```
 

@@ -15,9 +15,11 @@ Traditionally you'd install a whole operating system with everything for each ap
 command: docker images
 
 List running images:
+
 ```docker ps -a
 ```
 To get last images runned:
+
 ```docker ps -l
 ```
 

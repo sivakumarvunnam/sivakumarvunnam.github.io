@@ -14,13 +14,12 @@ Traditionally you'd install a whole operating system with everything for each ap
 ### List All Docker Images:
 command: docker images
 
-List running images:
-
-```docker ps -a
-```
+```List running images:
+docker ps -a
 To get last images runned:
-
-```docker ps -l
+docker ps -l
 ```
+
+
 
 ---

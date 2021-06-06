@@ -2,10 +2,7 @@
 layout: post
 title: "Docker Reference Guide"
 author: "Sivakumar Vunnam"
-excerpt: "Docker is an open platform for building, shipping and running distributed applications. It gives programmers, development teams and operations engineers the common toolbox they need to take advantage of the distributed and networked nature of modern applications."
-
-"In other words , Docker is an abstraction on top of low-level operating system tools that
-allows you to run one or more containerized processes or applications within one or more virtualized Linux instances."
+excerpt: "Docker is an open platform for building, shipping and running distributed applications. It gives programmers, development teams and operations engineers the common toolbox they need to take advantage of the distributed and networked nature of modern applications. In other words , Docker is an abstraction on top of low-level operating system tools that allows you to run one or more containerized processes or applications within one or more virtualized Linux instances."
 keywords: Docker, Docker-Compose, DevOps, K8S
 draft: false
 ---

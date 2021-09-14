@@ -1,9 +1,9 @@
 ---
 layout: post
-title: "Minikube vs kind vs k3s - What should I use?"
+title: "How To Set Up an Elasticsearch, Fluentd and Kibana (EFK) Logging Stack on Kubernetes"
 author: "Sivakumar Vunnam"
-excerpt: "In this post we’ll have a look at Minikube vs kind vs k3s and compare their pros and cons and identify use cases for each of them"
-keywords: Minikube, Kind, k3s, kubernetes, DevOps
+excerpt: "How To Set Up an Elasticsearch, Fluentd and Kibana (EFK) Logging Stack on Kubernetes"
+keywords: Minikube, Kind, EFK, EKS, Kubernetes, DevOps
 draft: false
 ---
 # How To Set Up an Elasticsearch, Fluentd and Kibana (EFK) Logging Stack on Kubernetes

@@ -7,6 +7,7 @@
     - Support cloud and On-Prem servers including <b>security configurations, patching, and troubleshooting. Fluentd (td-agent) scrapes logfiles</b> for specific error messages and sends the message, hostname, and tag metrics to Prometheus. Prometheus rules are setup to capture these metrics and generate an email alert
     - Implemented kubernetes cluster migration from on-prem <b>Kubespray cluster to EKS</b>.
   tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
+  data: Mar'21-Jul'21
  
 - name: "BlackHawk Network,Lewisville,TX"
   github:
@@ -23,6 +24,7 @@
     - <b>Saved 40K</b> in cloud hosting and improved performance by migrating monolith applications to modern microservices architecture and deployed into </b>ECS Faregate/Kubernetes</b>.
     - Worked with the development team to <b>configure New Relic APM, to trace the performance of API’s</b>, Infrastructure agents in servers and setup alerts. To reduce troubleshooting time, configured <b>ELK clusters using Elasticsearch</b>. Configured dashboards and visualizations in Kibana
   tech: CloudFormation, APIGateway, Lambda, ECS, EKS, RDS, Docker, Helm, Jenkins, SonarQube, Jfrog, EFK, Grafana, Prometheus, Consul, Packer
+  data: sep'18-Mar'21
 
     
   

@@ -14,22 +14,21 @@ title: Experience
       <div class="experience">
         <div class="experiences-name">
           <a href = "{{ experience.url }}">{{ experience.name }}</a>
+          <span class="star-button">
+          </span>
         </div>
-        <ul class="project-description">
-          {% for line in project.description %}
+        <ul class="experience-description">
+          {% for line in experience.description %}
             <li>{{ line }}</li>
           {% endfor %}
         </ul>
-        <span class="project-tech">
-          {% if project.tech %}
-            <span>Technologies involved</span>: {{ project.tech }}
+        <span class="experience-tech">
+          {% if experience.tech %}
+            <span>Technologies involved</span>: {{ experience.tech }}
           {% else %}
-            <span class="project-padding">.</span>
+            <span class="experience-padding">.</span>
           {% endif %}
         </span>
-        {% if project.source_url %}
-          <span class="project-source"><a href = "{{ project.source_url }}">View Source</a></span>
-        {% endif %}
       </div>
     {% endfor %}
   </div>

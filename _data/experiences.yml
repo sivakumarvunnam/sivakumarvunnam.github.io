@@ -1,55 +1,20 @@
-- name: "Avetta"
+- name: " Epsilon Data Management,Irving,TX"
   github:
-    repo: "Avetta"
-  source_url: "https://www.avetta.com/"
+    repo: "Epsilon Data Management"
+  source_url: "https://www.epsilon.com/us"
   description:
-    - CI-CD Process Setup Using Docker, Jenkins SonarQube
-  tech: Jenkins, Docker, SonarQube
+    - Develop Automation platform for delivering and managing Cloud and On-Prem infrastructure including, OpenStack, AWS and physical servers. Analyze current technology utilized within the company and develop steps and processes to improve and expand upon them
+    - Support cloud and On-Prem servers including security configurations, patching, and troubleshooting. Fluentd (td-agent) scrapes logfiles for specific error messages and sends the message, hostname, and tag metrics to Prometheus. Prometheus rules are setup to capture these metrics and generate an email alert
+  tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
 
-- name: "Dockerizing-React-App"
+- name: "BlackHawk Network,Lewisville,TX"
   github:
-    repo: "Dockerizing-React-App"
-  source_url: "https://github.com/sivakumarvunnam/Dockerizing-React-App"
+    repo: "BlackHawk Network"
+  source_url: "https://blackhawknetwork.com/"
   description:
-    - Demo Project to Setup Production Ready, React App using Docker, nginx
+    - Develop Automation platform for delivering and managing Cloud and On-Prem infrastructure including, OpenStack, AWS and physical servers. Analyze current technology utilized within the company and develop steps and processes to improve and expand upon them
+    - Support cloud and On-Prem servers including security configurations, patching, and troubleshooting. Fluentd (td-agent) scrapes logfiles for specific error messages and sends the message, hostname, and tag metrics to Prometheus. Prometheus rules are setup to capture these metrics and generate an email alert
+  tech: CloudFormation, APIGateway, Lambda, ECS, EKS, RDS, Docker, Helm, Jenkins, SonarQube, Jfrog, EFK, Grafana, Prometheus, Consul, Packer
 
-- name: "Dockerizing-Angular-App"
-  github:
-    repo: "Dockerizing-Angular-App"
-  source_url: "https://github.com/sivakumarvunnam/Dockerizing-Angular-App"
-  description:
-    - Demo Project to Setup Production Ready, Angular App using Docker, nginx with fully automated testcases using protractor
-
-- name: "Dockerizing-NodeApp-EFK"
-  github:
-    repo: "Dockerizing-NodeApp-EFK"
-  source_url: "https://github.com/sivakumarvunnam/Dockerizing-NodeApp-EFK"
-  description:
-    - Demo Project to Setup NodeJS App and configure centralized logging system using EFK.
-
-- name: "Vagrant-Ubuntu-Bionic-Base"
-  github:
-    repo: "vagrant-ubuntu-bionic-base"
-  source_url: "https://github.com/sivakumarvunnam/vagrant-ubuntu-bionic-base"
-  description:
-    - Vagrant Ubuntu 18.04 LTS base
-    - Project to launch a vagrant machine with environment dependencies
-
-- name: "Kind(Kubernetes-IN-Docker)-Ubuntu18.04"
-  github:
-    repo: "Kind-Ubuntu18.04"
-  source_url: "https://github.com/sivakumarvunnam/Kind-Ubuntu18.04"
-  description:
-    - Vagrant Ubuntu 18.04 LTS base
-    - Project to Setup Kubernetes IN Docker - local clusters for testing Kubernetes
-    - Kind is a tool for running local Kubernetes clusters using Docker container "nodes". kind was primarily designed for testing Kubernetes itself, but may be used for local development or CI.
-      
-- name: "Vagrant-Swarm-Cluster"
-  github:
-    repo: "vagrant-swarm-cluster"
-  source_url: "https://github.com/sivakumarvunnam/vagrant-swarm-cluster"
-  description:
-    - Vagrant boxes used to create a Docker Swarm cluster
-    - Project Run a Swarm cluster locally using Vagrant.
     
   

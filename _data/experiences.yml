@@ -4,8 +4,8 @@
   source_url: "https://www.epsilon.com/us"
   description:
     - Develop Automation platform for delivering and managing Cloud and On-Prem infrastructure including, OpenStack, AWS and physical servers. Analyze current technology utilized within the company and develop steps and processes to improve and expand upon them using <b>Terraform</b>
-    - Support cloud and On-Prem servers including security configurations, patching, and troubleshooting. Fluentd (td-agent) scrapes logfiles for specific error messages and sends the message, hostname, and tag metrics to Prometheus. Prometheus rules are setup to capture these metrics and generate an email alert
-    - Implemented kubernetes cluster migration from on-prem <b>kubeadm cluster to EKS</b>.
+    - Support cloud and On-Prem servers including <b>security configurations, patching, and troubleshooting. Fluentd (td-agent) scrapes logfiles</b> for specific error messages and sends the message, hostname, and tag metrics to Prometheus. Prometheus rules are setup to capture these metrics and generate an email alert
+    - Implemented kubernetes cluster migration from on-prem <b>Kubespray cluster to EKS</b>.
   tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
  
 - name: "BlackHawk Network,Lewisville,TX"

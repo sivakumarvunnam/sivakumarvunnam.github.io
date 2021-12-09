@@ -5,24 +5,29 @@ title: Experience
 
 <div id = "content">
   <header class="post-header">
-    <h1>Experience</h1>
+    <h1>experiences</h1>
   </header>
-  To see a complete list of my projects, see my <a href="{{ site.data.params.resume_url }}">CV</a>. Below, is a list of some of my selected projects.
+  To see a complete list of my experiences, see my <a href="{{ site.data.params.resume_url }}">CV</a>. Below, is a list of some of my selected experiences.
 
   <div class="experiences">
     {% for experience in site.data.experiences %}
       <div class="experience">
-        <div class="experiences-name">
+        <div class="experience-name">
           <a href = "{{ experience.url }}">{{ experience.name }}</a>
           <span class="star-button">
+            {% if experience.github %}
+              {% if experience.github.user %}
+                <a class="github-button" href="https://github.com/{{ experience.github.user }}/{{ experience.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star {{ experience.github.user }}/{{ experience.github.repo }} on GitHub">Star</a>
+              {% else %}
+                <a class="github-button" href="https://github.com/sivakumarvunnam/{{ experience.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star sivakumarvunnam/{{ experience.github.repo }} on GitHub">Star</a>
+              {% endif %}
+            {% endif %}
           </span>
         </div>
         <ul class="experience-description">
-          <p style="text-align:justify;">
           {% for line in experience.description %}
             <li>{{ line }}</li>
           {% endfor %}
-          </p>
         </ul>
         <span class="experience-tech">
           {% if experience.tech %}
@@ -31,6 +36,9 @@ title: Experience
             <span class="experience-padding">.</span>
           {% endif %}
         </span>
+        {% if experience.source_url %}
+          <span class="experience-source"><a href = "{{ experience.source_url }}">View Source</a></span>
+        {% endif %}
       </div>
     {% endfor %}
   </div>

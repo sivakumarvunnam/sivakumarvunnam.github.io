@@ -2,11 +2,11 @@
 layout: post
 title: "Deploying Karpenter with Terraform"
 author: "Sivakumar Vunnam"
-excerpt: "excerpt: Karpenter is a new auto-scaling component from AWS and its docs are still growing. Here's how to deploy it using Terraform."
+excerpt: "Karpenter is a new auto-scaling component from AWS and its docs are still growing. Here's how to deploy it using Terraform."
 keywords: AWS, EKS, Karpenter, Terraform, DevOps
 draft: false
 ---
-# This is written to deploy Karpenter 0.5.1, which may be an old version by the time you read this. I'll most likely update this over time, but refer to the docs for updated information.
+# Deploy Karpenter 0.5.1, which may be an old version by the time you read this. I'll most likely update this over time, but refer to the docs for updated information.
 
 ## About Karpenter
 

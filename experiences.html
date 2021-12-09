@@ -9,10 +9,10 @@ title: Experience
   </header>
   To see a complete list of my projects, see my <a href="{{ site.data.params.resume_url }}">CV</a>. Below, is a list of some of my selected projects.
 
-  <div class="projects">
-    {% for project in site.data.experience %}
-      <div class="project">
-        <div class="project-name">
+  <div class="experiences">
+    {% for experience in site.data.experiences %}
+      <div class="experience">
+        <div class="experiences-name">
           <a href = "{{ experience.url }}">{{ experience.name }}</a>
         </div>
         <ul class="project-description">

@@ -4,6 +4,7 @@
   source_url: "https://www.avetta.com/"
   description:
     - CI-CD Process Setup Using Docker, Jenkins SonarQube
+  tech: Jenkins, Docker, SonarQube
 
 - name: "Dockerizing-React-App"
   github:

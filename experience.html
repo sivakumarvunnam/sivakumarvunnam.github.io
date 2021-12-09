@@ -10,19 +10,10 @@ title: Experience
   To see a complete list of my projects, see my <a href="{{ site.data.params.resume_url }}">CV</a>. Below, is a list of some of my selected projects.
 
   <div class="projects">
-    {% for project in site.data.projects %}
+    {% for project in site.data.experience %}
       <div class="project">
         <div class="project-name">
-          <a href = "{{ project.url }}">{{ project.name }}</a>
-          <span class="star-button">
-            {% if project.github %}
-              {% if project.github.user %}
-                <a class="github-button" href="https://github.com/{{ project.github.user }}/{{ project.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star {{ project.github.user }}/{{ project.github.repo }} on GitHub">Star</a>
-              {% else %}
-                <a class="github-button" href="https://github.com/sivakumarvunnam/{{ project.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star sivakumarvunnam/{{ project.github.repo }} on GitHub">Star</a>
-              {% endif %}
-            {% endif %}
-          </span>
+          <a href = "{{ experience.url }}">{{ experience.name }}</a>
         </div>
         <ul class="project-description">
           {% for line in project.description %}

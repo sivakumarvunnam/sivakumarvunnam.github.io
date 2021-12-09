@@ -18,9 +18,11 @@ title: Experience
           </span>
         </div>
         <ul class="experience-description">
+          <p style="text-align:justify;">
           {% for line in experience.description %}
             <li>{{ line }}</li>
           {% endfor %}
+          </p>
         </ul>
         <span class="experience-tech">
           {% if experience.tech %}

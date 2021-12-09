@@ -5,11 +5,13 @@ title: Experience
 
 <div id = "content">
   <header class="post-header">
-    <h1>experiences</h1>
+    <h1>Experiences</h1>
   </header>
+  <p style="text-align:justify;">
   To see a complete list of my experiences, see my <a href="{{ site.data.params.resume_url }}">CV</a>. Below, is a list of some of my selected experiences.
+  </p>
 
-  <div class="experiences">
+  <div class="Experiences">
     {% for experience in site.data.experiences %}
       <div class="experience">
         <div class="experience-name">
@@ -36,9 +38,6 @@ title: Experience
             <span class="experience-padding">.</span>
           {% endif %}
         </span>
-        {% if experience.source_url %}
-          <span class="experience-source"><a href = "{{ experience.source_url }}">View Source</a></span>
-        {% endif %}
       </div>
     {% endfor %}
   </div>

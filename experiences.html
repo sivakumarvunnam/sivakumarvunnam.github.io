@@ -17,13 +17,9 @@ title: Experience
         <div class="experience-name">
           <a href = "{{ experience.url }}">{{ experience.name }}</a>
           <span class="star-button">
-            {% if experience.github %}
-              {% if experience.github.user %}
-                <a class="github-button" href="https://github.com/{{ experience.github.user }}/{{ experience.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star {{ experience.github.user }}/{{ experience.github.repo }} on GitHub">Star</a>
-              {% else %}
-                <a class="github-button" href="https://github.com/sivakumarvunnam/{{ experience.github.repo }}" data-size="large" data-show-count="true" data-icon="octicon-star" aria-label="Star sivakumarvunnam/{{ experience.github.repo }} on GitHub">Star</a>
-              {% endif %}
-            {% endif %}
+            <p style="text-align:justify;">
+              Mar 21 - Jul 21
+              </p>
           </span>
         </div>
         <ul class="experience-description">

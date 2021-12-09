@@ -13,8 +13,8 @@
   source_url: "https://blackhawknetwork.com/"
   description:
     - Member of the Global DevOps organization at Blackhawk Network responsible for standardizing, provisioning, and supporting infrastructure for distributed applications.
-    - Cloud Governance: Standardize the creation of several AWS resources using AWS Service Catalog. This helps our centralized DevOps team define and set standards for resources created using template level constraints and automatic tagging of resources.
-    - Cost Optimization: Lead a team to implement mixed instance types in EC2 Auto Scaling Groups across all our AWS accounts. This update has seen us launch spot instances wherever applicable and hasreduced EC2 costs by over 50% per month in our non-prod accounts.
+    - <b>Cloud Governance:</b> Standardize the creation of several AWS resources using AWS Service Catalog. This helps our centralized DevOps team define and set standards for resources created using template level constraints and automatic tagging of resources.
+    - <b>Cost Optimization:</b> Lead a team to implement mixed instance types in EC2 Auto Scaling Groups across all our AWS accounts. This update has seen us launch spot instances wherever applicable and hasreduced EC2 costs by over 50% per month in our non-prod accounts.
     - Migrated to Application Load Balancer is more cost effective than Classic Load Balancer. For CLB's with high resource utilization, migrating to ALB saved 47% per month on our production accounts.
     - Accomplished immutable infrastructure using CloudFormation and Terraform to deploy infrastructure in cloud/on-premises. Accomplished Setting up the build and deployment automation for Dev, Preproduction, Production environment using Terraform with Terragrunt as a wrapper
     - Expertise in building Continuous Integration and Continuous Delivery (CI/CD) on AWS environment using AWS Code Commit, Code Build, Code Deploy, and Code Pipeline and experience in using AWS Terraform, AWS CloudFormation, API Gateway, and AWS Lambda in automation and securing the infrastructure onAWS.

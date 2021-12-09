@@ -1,0 +1,35 @@
+---
+layout: default
+title: Experiences
+---
+
+<div id = "content">
+  <header class="post-header">
+    <h1>Experience</h1>
+  </header>
+  To see a complete list of my projects, see my <a href="{{ site.data.params.resume_url }}">CV</a>. Below, is a list of some of my selected projects.
+
+  <div class="experiences">
+    {% for experience in site.data.experience %}
+      <div class="experience">
+        <div class="experience-name">
+          <a href = "{{ experience.url }}">{{ experience.name }}</a>
+        </div>
+        <ul class="experience-description">
+          {% for line in experience.description %}
+            <li>{{ line }}</li>
+          {% endfor %}
+        </ul>
+        <span class="experience-tech">
+          {% if experience.tech %}
+            <span>Technologies involved</span>: {{ experience.tech }}
+          {% else %}
+            <span class="experience-padding">.</span>
+          {% endif %}
+        </span>
+      </div>
+    {% endfor %}
+  </div>
+</div>
+
+<script async defer src="https://buttons.github.io/buttons.js"></script>

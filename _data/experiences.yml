@@ -12,8 +12,15 @@
     repo: "BlackHawk Network"
   source_url: "https://blackhawknetwork.com/"
   description:
-    - Develop Automation platform for delivering and managing Cloud and On-Prem infrastructure including, OpenStack, AWS and physical servers. Analyze current technology utilized within the company and develop steps and processes to improve and expand upon them
-    - Support cloud and On-Prem servers including security configurations, patching, and troubleshooting. Fluentd (td-agent) scrapes logfiles for specific error messages and sends the message, hostname, and tag metrics to Prometheus. Prometheus rules are setup to capture these metrics and generate an email alert
+    - Member of the Global DevOps organization at Blackhawk Network responsible for standardizing, provisioning, and supporting infrastructure for distributed applications.
+    - Cloud Governance: Standardize the creation of several AWS resources using AWS Service Catalog. This helps our centralized DevOps team define and set standards for resources created using template level constraints and automatic tagging of resources.
+    - Cost Optimization: Lead a team to implement mixed instance types in EC2 Auto Scaling Groups across all our AWS accounts. This update has seen us launch spot instances wherever applicable and hasreduced EC2 costs by over 50% per month in our non-prod accounts.
+    - Migrated to Application Load Balancer is more cost effective than Classic Load Balancer. For CLB's with high resource utilization, migrating to ALB saved 47% per month on our production accounts.
+    - Accomplished immutable infrastructure using CloudFormation and Terraform to deploy infrastructure in cloud/on-premises. Accomplished Setting up the build and deployment automation for Dev, Preproduction, Production environment using Terraform with Terragrunt as a wrapper
+    - Expertise in building Continuous Integration and Continuous Delivery (CI/CD) on AWS environment using AWS Code Commit, Code Build, Code Deploy, and Code Pipeline and experience in using AWS Terraform, AWS CloudFormation, API Gateway, and AWS Lambda in automation and securing the infrastructure onAWS.
+    - Implemented and improved Jenkins CICD process using shared libraries for Java, Angular, Nodejs, Django, Python, Ruby & Rails languages. Unit Tests, Xray, SCA Scan using Jenkins DSL, Shell and Groovy programming. Wrote custom Jenkinsfiles to call different stages and build components ofshared libraries to help engineers reduce the time of build and deployment.
+    - Saved 40K in cloud hosting and improved performance by migrating monolith applications to modern microservices architecture and deployed into ECS Faregate/Kubernetes.
+    - Worked with the development team to configure New Relic APM, to trace the performance of API’s, Infrastructure agents in servers and setup alerts. To reduce troubleshooting time, configured ELK clusters using Elasticsearch. Configured dashboards and visualizations in Kibana
   tech: CloudFormation, APIGateway, Lambda, ECS, EKS, RDS, Docker, Helm, Jenkins, SonarQube, Jfrog, EFK, Grafana, Prometheus, Consul, Packer
 
     

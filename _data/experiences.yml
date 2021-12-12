@@ -62,5 +62,16 @@
     - Developed Ansible Playbooks and roles to launch Jenkins master, nodes, plugin installation, system configuration and configure all Jenkins jobs. Implemented Infrastructure as code which eliminated manual changesto Jenkins jobs and misconfigurations
     - Migrating source code repositories from centralized version control system (SVN) to Distributed version control system (Git)
   tech: 
-  data: Dec’15-Apr’16  
+  data: Dec’15-Apr’16
+
+- name: "Build and Release Engineer, Unwired Labs, Hyderabad, Telangana"
+  github:
+    repo: "Unwired Labs"
+  source_url: "https://unwiredlabs.com/"
+  description:
+    - Worked on Installing, Configuring, and Administration tasks in the Gitlab Source code management tool. Implemented Continuous Integration and continuous deployment using Gitlab, Jenkins, Maven, NexusAnsible.
+    - provisioning virtual machines on-premises using vagrant and responsible forsetting up Cron jobsscripts on production servers.
+    - Maintained protocols like TCP/IP, NIS, NFS, DNS, SNMP, VSFTPD and DHCP FTP and Samba on Linux systems.
+  tech: 
+  data: Jan’13-Jul’14
   

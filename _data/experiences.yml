@@ -46,11 +46,11 @@
     repo: "HGST a Western Digital"
   source_url: "https://www.westerndigital.com/"
   description:
-    - Automated Installation, configuring and administration the Linux VM’s on ESXI servers Using Vagrant and Implemented the automated factory installation on Active Scale X100 and Active Scale P100 hardware, Supporting TAAS (Test Drive as a Service) multiple geographical locations from Belgium, Las Vegas, and San Jose.
-    - Experience in writing the YAML files for Jenkins Job Builder for Dynamic Jenkins jobs configuration. Installation, configuration, and administration experience in revision management tool Gitlab, Jenkins, Maven, Nexus, Docker, Kubernetes.
+    - Automated Installation, configuring and administration the Linux VM’s on ESXI servers Using Vagrant and Implemented the automated factory installation on <b>Active Scale X100 and Active Scale P100 hardware, Supporting TAAS (Test Drive as a Service)</b> multiple geographical locations from Belgium, Las Vegas, and San Jose.
+    - Experience in writing the YAML files for <b>Jenkins Job Builder for Dynamic Jenkins jobs configuration</b>. Installation, configuration, and administration experience in revision management tool Gitlab, Jenkins, Maven, Nexus, Docker, Kubernetes.
     - Written Dockerfiles to Isolate Java Spring, Python Django, Nodejs, Angular, applications images using docker.
     - Used Docker Compose and Docker Swarm to deploy Dockerized images applications on ubuntu Linux 16.04 VM’s and Setting up alerting and monitoring of our infrastructure using Prometheus andGrafana
-  tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
+  tech: VMWare ESXI, Ubuntu, Gitlab, Jenkins, Maven, Nexus, Docker, Kubernetes, SonarQube, Jfrog, Java, Python, Angular, EFK, Grafana, Prometheus, Consul
   data: Jul’16-Aug’17
     
   

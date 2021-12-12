@@ -41,7 +41,7 @@
   tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
   data: Oct'17-Aug'18
 
-- name: "Senior DevOps Engineer, Saibersys Inc | HGST Inc, San Jose, CA "
+- name: "Senior DevOps Engineer, Saibersys Inc | HGST Inc, San Jose, CA"
   github:
     repo: "HGST a Western Digital"
   source_url: "https://www.westerndigital.com/"
@@ -52,5 +52,15 @@
     - Used Docker Compose and Docker Swarm to deploy Dockerized images applications on ubuntu Linux 16.04 VM’s and Setting up alerting and monitoring of our infrastructure using Prometheus andGrafana
   tech: VMWare ESXI, Ubuntu, Gitlab, Jenkins, Maven, Nexus, Docker, Kubernetes, SonarQube, Jfrog, Java, Python, Angular, EFK, Grafana, Prometheus, Consul
   data: Jul’16-Aug’17
-    
+
+- name: "DevOps Engineer, Saibersys Inc | Cisco Inc, San Jose, CA"
+  github:
+    repo: "Cisco Inc"
+  source_url: "https://www.cisco.com/"
+  description:
+    - Handling day to day tickets opened in JIRA ticketing system. Setting up Continuous Integration and Continuous Deployment process using Git, Jenkins, Maven, Nexus, SonarQube, Tomcat application severs instances.
+    - Developed Ansible Playbooks and roles to launch Jenkins master, nodes, plugin installation, system configuration and configure all Jenkins jobs. Implemented Infrastructure as code which eliminated manual changesto Jenkins jobs and misconfigurations
+    - Migrating source code repositories from centralized version control system (SVN) to Distributed version control system (Git)
+  tech: 
+  data: Dec’15-Apr’16  
   

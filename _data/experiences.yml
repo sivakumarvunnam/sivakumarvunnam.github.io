@@ -37,7 +37,7 @@
     - <b>Cloud Migration:</b> Worked on a time-critical migration project called Hawk Incentivesto successfully migrate all components (web, app servers and databases, Windows AD) of an acquisition made by Blackhawk Network from on-premises to AWS. This resulted in cost savings of over 40% on a monthly basis.
     - Automated Java Spring, ruby on rails, Nodejs application build, deployments process using Jenkins, CloudFormation, Code Deploy. Configure d Apache gateways, New Relic and ELK for Monitoring and logging.
     - <b>Cloud Security:</b> Collaborated with the InfoSec team to provision and configure several third-party tools such as Rapid7, Red lock (Prisma cloud) for maintaining governance and enforcing compliance across three of our production AWSaccounts.
-    - Reduced Docker images size by 40% which saved server resources like CPU and memory by using multistage Docker files and deployed them in ECS/EC2. Involved in migrating to microservices architecture from legacy monolith architectures
+    - Reduced <b>Docker images size by 40% which saved server resources like CPU and memory by using multistage</b> Docker files and deployed them in ECS/EC2. Involved in migrating to microservices architecture from legacy monolith architectures
   tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
   data: Oct'17-Aug'18
     

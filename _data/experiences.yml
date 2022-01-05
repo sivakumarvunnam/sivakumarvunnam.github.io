@@ -1,3 +1,17 @@
+- name: "Avetta, Lewisville, TX"
+  github:
+    repo: "Avetta"
+  source_url: "https://www.avetta.com/"
+  description:
+    - Member of DevOps Team responsible for worksite safety environment. writing <b>Terraform Private modules</b> as infrastructure as code (IAC) and creating AWS EKS cluster with Autoscaling enabled feature, <b>AWS load balancer Ingress</b> with end-to-end better observability using <b>EFK</b> and <b>New Relic</b>.
+    - Designed continuous integration process for terraform modules as infrastructure as code (IAC) using <b>GitHub Actions</b> and <b>Terraform Cloud</b>.
+    - Worked on connect and worksite safety applications to convert Kubernetes manifests file to use Helm charts for Kubernetes deployments. Created Private Helm Chart repo with S3 Bucket.
+    - Came up with solution to use GitOps methodology using <b>ArgoCD</b> for continuous deployments for all environments.
+    - Working on Salt Stack to manage exiting AWS Infrastructure and self-Managed Kubernetes deployments using Jenkins. Travis-CI for Continuous Integration.
+    - Worked on baking AMI for EC2 and EKS using Packer and <b>GitHub Actions</b>.
+  tech: Terraform, Kubernetes, Docker, Helm, ArgoCD, Jenkins, BlackDuck, Scala, NodeJs, ELM, EFK, Grafana, Prometheus, New Relic, GitHub Actions
+  data: Jul'21-Present
+  
 - name: "Epsilon Data Management, Irving, TX"
   github:
     repo: "Epsilon Data Management"

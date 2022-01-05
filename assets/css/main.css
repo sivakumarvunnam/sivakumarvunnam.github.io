@@ -199,6 +199,79 @@ body {
   color: #508cda;
 }
 
+.experiences {
+  font-size: 0.9em;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  list-style: none;
+}
+
+.experience {
+  margin: 40px 0px;
+  padding-bottom: 20px;
+}
+
+.experience-name {
+  padding: 10px;
+  font-size: 1.3em;
+  border-top: 1px solid;
+  border-bottom: 1px solid;
+}
+
+.experience-name a {
+  color: #205caa;
+  padding-bottom: 2px;
+  border-bottom: 1px dashed #205caa;
+}
+
+.experience-name a:visited {
+  color: #205caa;
+}
+
+.experience-name a:hover {
+  color: #508cda;
+}
+
+.experience-description {
+  padding-top: 10px;
+  padding-left: 30px;
+}
+
+.experience-description li {
+  margin-bottom: 5px;
+}
+
+.experience-tech {
+  margin-left: 14px;
+}
+
+.experience-tech span {
+  padding-bottom: 2px;
+  font-weight: bold;
+}
+
+.experience-tech .experience-padding {
+  visibility: hidden;
+}
+
+.experience-source a {
+  border: 1px solid;
+  border-radius: 5px;
+  padding: 5px;
+  float: right;
+  margin-right: 2%;
+  position: relative;
+  bottom: 13px;
+  color: #205caa;
+}
+
+.experience-source a:visited {
+  color: #205caa;
+}
+
+.experience-source a:hover {
+  color: #508cda;
+}
 
 
 #gpg-fingerprint {

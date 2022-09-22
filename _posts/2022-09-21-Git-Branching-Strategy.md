@@ -25,13 +25,15 @@ What are the advantages of branching in Git?
 * Develop branch – Is the branch which developers work on
 * Feature branch – Is the branch which developer work on for assigned/particular feature
 * Release branch – Is the branch which has the code ready for release
-* Hotfix branch – Is the branch where a developer has to quickly fix an issue immediate Commands used in Git branching
+* Hotfix branch – Is the branch where a developer has to quickly fix an issue immediate 
 
-`git branch <branch_name>` | creates a new branch
+## Commands used in Git branching
 
-`git merge <branch_name>` | merges a branch
+* `git branch <branch_name>` | creates a new branch
 
-`git checkout <branch_name>` | To switch between branches
+* `git merge <branch_name>` | merges a branch
+
+* `git checkout <branch_name>` | To switch between branches
 
 How does Git Branching Strategy works? Let’s understand with a diagram
 ---------------

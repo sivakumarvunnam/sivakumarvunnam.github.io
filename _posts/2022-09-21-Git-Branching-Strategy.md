@@ -27,3 +27,9 @@ Feature branch – Is the branch which developer work on for assigned/particular
 Release branch – Is the branch which has the code ready for release
 Hotfix branch – Is the branch where a developer has to quickly fix an issue immediate Commands used in Git branching
 ```
+
+`git branch <branch_name>` | creates a new branch
+
+`git merge <branch_name>` | merges a branch
+
+`git checkout <branch_name>` | To switch between branches

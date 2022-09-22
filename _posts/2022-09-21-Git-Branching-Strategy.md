@@ -39,12 +39,18 @@ How does Git Branching Strategy works? Let’s understand with a diagram
 
 ```The simple way of understanding like from which branch will be the code branched off. As shown in the figure the develop branch and the hotfix branch work from the codebase which is on the master branch also known as main branch. The release and the feature work on the code from the develop branch. In either case the main codebase is not affected if any failure happens. At anytime if there is any failure it can be rolled back and since the codebase is unaffected the developers can rework on it.```
 
-Git Branching Strategy Best Practices 1
+
+Branching Strategy Best Practices 1
 ---------------
 The flow diagram of branching off into different branches as per requirement.
 
+![](/assets/images/git-branching-1.png)
+
 Git Branching Strategy Best Practices 2
 ---------------
+
+![](/assets/images/git-branching-2.png)
+
 Conclusion:
 ---------------
 In this article we have covered Git Branching Strategy Best Practices,What is Git branching,Why do we need branching in Git,What are the advantages of branching in Git,Commands used in Git branching.

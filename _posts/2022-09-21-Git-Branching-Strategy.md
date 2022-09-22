@@ -21,11 +21,11 @@ What are the advantages of branching in Git?
 
 ## For example
 
-* ## Master branch – Is the main branch which has the source code
-* ## Develop branch – Is the branch which developers work on
-* ## Feature branch – Is the branch which developer work on for assigned/particular feature
-* ## Release branch – Is the branch which has the code ready for release
-* ## Hotfix branch – Is the branch where a developer has to quickly fix an issue immediate 
+* **Master branch** – Is the main branch which has the source code
+* **Develop branch** – Is the branch which developers work on
+* **Feature branch** – Is the branch which developer work on for assigned/particular feature
+* **Release branch** – Is the branch which has the code ready for release
+* **Hotfix branch** – Is the branch where a developer has to quickly fix an issue immediate 
 
 ## Commands used in Git branching
 

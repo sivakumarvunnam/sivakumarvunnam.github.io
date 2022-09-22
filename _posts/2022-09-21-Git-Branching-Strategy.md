@@ -36,10 +36,8 @@ Hotfix branch – Is the branch where a developer has to quickly fix an issue im
 
 How does Git Branching Strategy works? Let’s understand with a diagram
 ---------------
-
-**```The simple way of understanding like from which branch will be the code branched off. As shown in the figure the develop branch and the hotfix branch work from the codebase which is on the master branch also known as main branch.
-
-The release and the feature work on the code from the develop branch. In either case the main codebase is not affected if any failure happens. At anytime if there is any failure it can be rolled back and since the codebase is unaffected the developers can rework on it.```**
+```The simple way of understanding like from which branch will be the code branched off. As shown in the figure the develop branch and the hotfix branch work from the codebase which is on the master branch also known as main branch. The release and the feature work on the code from the develop branch. In either case the main codebase is not affected if any failure happens. At anytime if there is any failure it can be rolled back and since the codebase is unaffected the developers can rework on it.
+```
 
 Git Branching Strategy Best Practices 1
 ---------------

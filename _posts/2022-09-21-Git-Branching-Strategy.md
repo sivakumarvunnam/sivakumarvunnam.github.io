@@ -19,14 +19,13 @@ What are the advantages of branching in Git?
 ---------------
 ```Developer can work on specific feature or as per the need in the project without affecting the codebase Multiple developers can work on the same codebase simultaneously Easy to work and detect bugs before merging to the master branch Can fix the problem when the need arises Git Branching Strategy Best Practices There can be many branches at various levels of working in order to get to a stable level.```
 
-For example
+## For example
 
-```Master branch – Is the main branch which has the source code
-Develop branch – Is the branch which developers work on
-Feature branch – Is the branch which developer work on for assigned/particular feature
-Release branch – Is the branch which has the code ready for release
-Hotfix branch – Is the branch where a developer has to quickly fix an issue immediate Commands used in Git branching
-```
+* Master branch – Is the main branch which has the source code
+* Develop branch – Is the branch which developers work on
+* Feature branch – Is the branch which developer work on for assigned/particular feature
+* Release branch – Is the branch which has the code ready for release
+* Hotfix branch – Is the branch where a developer has to quickly fix an issue immediate Commands used in Git branching
 
 `git branch <branch_name>` | creates a new branch
 

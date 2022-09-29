@@ -1,3 +1,19 @@
+- name: "terraform-helm-release"
+  github:
+    repo: "terraform-helm-release"
+  source_url: "https://github.com/sivakumarvunnam/terraform-helm-release"
+  description:
+    - Terraform module to deploy helm chart's 
+  tech: Terrafrom, Helm
+
+- name: "terraform-aws-private-eks-lb"
+  github:
+    repo: "terraform-aws-private-eks-lb"
+  source_url: "https://github.com/sivakumarvunnam/terraform-aws-private-eks-lb"
+  description:
+    - Going to create EKS Cluster using a community module. so we don’t have to write much code.
+  tech: AWS, Terraform, EKS, VPC, Helm, ArgoCD
+  
 - name: "CI-CD-Docker"
   github:
     repo: "CI-CD-Docker"

@@ -5,6 +5,30 @@
   description:
     - Terraform module to deploy helm chart's 
   tech: Terrafrom, Helm
+  
+- name: "terraform-aws-aks"
+  github:
+    repo: "terraform-aws-aks"
+  source_url: "https://github.com/sivakumarvunnam/terraform-aws-eks"
+  description:
+    - Terraform module to create EKS cluster with ALB Ingress, ExternalDNS, Cluster-Autoscaler using Terraform Cloud 
+  tech: Terrafrom, AWS, EKS, Helm, Kubectl, Terraform Cloud
+
+- name: "terraform-aws-vpc"
+  github:
+    repo: "terraform-aws-vpc"
+  source_url: "https://github.com/sivakumarvunnam/terraform-aws-vpc"
+  description:
+    - Terraform module to create vpc
+  tech: Terrafrom, AWS, VPC, Terraform Cloud
+  
+- name: "terraform-azure-aks"
+  github:
+    repo: "terraform-azure-aks"
+  source_url: "https://github.com/sivakumarvunnam/terraform-azure-aks"
+  description:
+    - Terraform module to create azure AKS 
+  tech: Terrafrom, Azure, AKS
 
 - name: "terraform-aws-private-eks-lb"
   github:

@@ -128,4 +128,3 @@ our pass values
     {{ myOtherFunc "scalar" }}
     {{ myOtherFunc 64 }}
     {{ myOtherFunc . }}           # Provide current context to pass multiple values
-{% endraw %}

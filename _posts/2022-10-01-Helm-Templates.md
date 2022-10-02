@@ -11,6 +11,8 @@ Note that while Helm uses Go templates it does so by using the
 [Sprig templating library](https://masterminds.github.io/sprig/) 
 which provides additional functions that you can use.
 
+{% raw %}
+
 ## Newline Handling
 
     {{ <something> }}              # Will produce a newline
@@ -128,3 +130,4 @@ our pass values
     {{ myOtherFunc "scalar" }}
     {{ myOtherFunc 64 }}
     {{ myOtherFunc . }}           # Provide current context to pass multiple values
+ {% endraw %}

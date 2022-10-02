@@ -6,7 +6,7 @@
     - Terraform module to deploy helm chart's 
   tech: Terrafrom, Helm
   
-- name: "terraform-aws-eks
+- name: "terraform-aws-eks"
   github:
     repo: "terraform-aws-eks"
   source_url: "https://github.com/sivakumarvunnam/terraform-aws-eks"

@@ -11,7 +11,6 @@
     - Worked on baking AMI for EC2 and EKS using Packer and <b>GitHub Actions</b>.
   tech: Terraform, Kubernetes, Docker, Helm, ArgoCD, Jenkins, BlackDuck, Scala, NodeJs, ELM, EFK, Grafana, Prometheus, New Relic, GitHub Actions
   data: Jul'21-Present
-  
 - name: "Epsilon Data Management, Irving, TX"
   github:
     repo: "Epsilon Data Management"
@@ -22,7 +21,6 @@
     - Implemented kubernetes cluster migration from on-prem <b>Kubespray cluster to EKS</b>.
   tech: Terraform, Kubernetes, Docker, Helm, Spinnaker, Jenkins, SonarQube, Java, EFK, Grafana, Prometheus, Consul
   data: Mar'21-Jul'21
- 
 - name: "BlackHawk Network, Lewisville, TX"
   github:
     repo: "BlackHawk Network"

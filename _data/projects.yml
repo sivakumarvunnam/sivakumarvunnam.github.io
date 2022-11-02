@@ -1,3 +1,11 @@
+- name: "terraform-aws-vpc-peering"
+  github:
+    repo: "terraform-aws-vpc-peering"
+  source_url: "https://github.com/sivakumarvunnam/terraform-aws-vpc-peering"
+  description:
+    - Terraform module to for setting up AWS VPC peering 
+  tech: Terrafrom, AWS, VPC, VPC Peering
+  
 - name: "terraform-helm-release"
   github:
     repo: "terraform-helm-release"
